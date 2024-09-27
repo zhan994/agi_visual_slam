@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>camera_model</name>
+  <name>plvio_camera_model</name>
   <version>0.0.0</version>
   <description>The camera_model package</description>
 

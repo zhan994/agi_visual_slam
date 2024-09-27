@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(feature_tracker)
+project(plvio_feature_tracker)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
 find_package(catkin REQUIRED COMPONENTS
@@ -29,13 +29,13 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
 )
 
-add_executable(feature_tracker
+add_executable(plvio_feature_tracker
     src/feature_tracker_node.cpp
     src/parameters.cpp
     src/feature_tracker.cpp
     )
 
-target_link_libraries(feature_tracker ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(plvio_feature_tracker ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 # line detect and match
 add_executable(LineFeature_tracker    

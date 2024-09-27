@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>feature_tracker</name>
+  <name>plvio_feature_tracker</name>
   <version>0.0.0</version>
   <description>The feature_tracker package</description>
 

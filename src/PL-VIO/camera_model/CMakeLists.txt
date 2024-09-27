@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(camera_model)
+project(plvio_camera_model)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -fPIC")
 
 find_package(catkin REQUIRED COMPONENTS
@@ -49,7 +49,7 @@ include_directories("include")
 #     src/gpl/gpl.cc
 #     src/gpl/EigenQuaternionParameterization.cc)
 
-add_library(camera_model
+add_library(plvio_camera_model
     src/chessboard/Chessboard.cc
     src/calib/CameraCalibration.cc
     src/camera_models/Camera.cc
@@ -64,4 +64,4 @@ add_library(camera_model
     src/gpl/EigenQuaternionParameterization.cc)
 
 # target_link_libraries(Calibration ${Boost_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES})
-target_link_libraries(camera_model ${Boost_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES})
+target_link_libraries(plvio_camera_model ${Boost_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES})
