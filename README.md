@@ -4,3 +4,4 @@
 ## pkgs
 
 - VINS-Mono: https://github.com/HKUST-Aerial-Robotics/VINS-Mono
+- PL-VIO: https://github.com/HeYijia/PL-VIO
